@@ -3,8 +3,7 @@
 	src: url('assets/Cubano.ttf');
 	src:
 		local('Cubano'),
-		url('assets/Cubano.ttf')
-		format('truetype');
+		url('assets/Cubano.ttf') format('truetype');
 }
 
 @font-face {
@@ -12,8 +11,7 @@
 	src: url('assets/Recoleta-SemiBold.ttf');
 	src:
 		local('Recoleta SemiBold'),
-		url('assets/Recoleta-SemiBold.ttf')
-		format('truetype');
+		url('assets/Recoleta-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -21,8 +19,8 @@
 	src: url('assets/Recoleta-Regular.ttf');
 	src:
 		local('Recoleta Regular'),
-		url('assets/Recoleta-Regular.ttf')
-		format('truetype');
+		url('assets/Recoleta-Regular.ttf') format('truetype'),
+    url('assets/Recoleta-Regular.woff') format'(woff);
 }
 
 *,
@@ -51,7 +49,7 @@ body {
 
 .tagline {
   font-family: 'Cubano';
-  font-size: 70px;
+  font-size: 5vw;
   color: #000;
 }
 
