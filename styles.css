@@ -12,7 +12,8 @@
 	src: url('assets/Recoleta-SemiBold.ttf');
 	src:
 		local('Recoleta SemiBold'),
-		url('assets/Recoleta-SemiBold.ttf') format('truetype');
+		url('assets/Recoleta-SemiBold.ttf') format('truetype'),
+    url('assets/Recoleta-SemiBold.woff') format('woff');
 }
 
 @font-face {
@@ -21,7 +22,7 @@
 	src:
 		local('Recoleta Regular'),
 		url('assets/Recoleta-Regular.ttf') format('truetype'),
-    url('assets/Recoleta-Regular.woff') format'(woff);
+    url('assets/Recoleta-Regular.woff') format('woff');
 }
 
 /* Global CSS */
