@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
 	font-family: 'Cubano';
 	src: url('assets/Cubano.ttf');
@@ -23,6 +24,7 @@
     url('assets/Recoleta-Regular.woff') format'(woff);
 }
 
+/* Global CSS */
 *,
 html,
 body {
@@ -33,27 +35,31 @@ body {
   scroll-behavior: smooth;
 }
 
-#hero {
+/* Section 1 - HOME */
+#home {
   height: 100vh;
   background: url('assets/amaia.jpg');
   background-size: cover;
 }
 .filter {
-  height: 100vh;
+  height: 100%;
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .tagline {
   font-family: 'Cubano';
-  font-size: 5vw;
+  font-size: 70px;
   color: #000;
 }
 
-#container-1 {
+/* Section 2 - CTA */
+
+#CTA {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -61,107 +67,253 @@ body {
   flex-direction: column;
 }
 
-#container-2 {
-  height: 100vh;
+.cta-div, .cand-div {
+  width: 75vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
-#container-3 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#container-4 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#container-5 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#container-6 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#container-7 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.div-center {
-  width: 60vw;
-  min-width: 80vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 40px;
-}
-
-.div-center-platform {
-  width: 60vw;
-  min-width: 80vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.mainline-1 {
+.cta-p, .cand-p {
   font-family: 'Cubano';
   font-size: 40px;
   color: #000;
+  text-align: center;
+  width: 90%;
 }
 
-.mainline-2 {
-  font-family: 'Cubano';
-  font-size: 60px;
-  color: #000;
+/* Section 3 - Candidates */
+#candidates {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* .cand-div @ Section 2 */
+/* .cand-p @ Section 2 */
+
+.cand-div-resp {
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 0;
 }
 
-.mainline-3 {
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profilepic {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.cand-name {
   font-family: 'Cubano';
   font-size: 30px;
   color: #000;
+  text-decoration: none;
 }
 
-.mainline-4 {
+.cand-desc {
   font-family: 'Recoleta SemiBold';
   font-size: 20px;
   color: #000;
 }
 
-.mainline-5 {
-  font-family: 'Recoleta Regular';
-  font-size: 24px;
+.link-fd-cand {
+  display: block;
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-family: 'Recoleta SemiBold';
+  font-size: 22px;
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+  border: 2px solid #000;
+}
+
+/* Section 4 - Platform */
+#platform {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plat-div {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.plat-h {
+  font-family: 'Cubano';
+  font-size: 60px;
+  color: #000;
+  margin: 20px 0;
+}
+
+.plat-i {
+  font-family: 'Cubano';
+  font-size: 40px;
+  color: #000;
+  margin: 10px 0;
+}
+
+.plat-p {
+  font-family: 'Recoleta SemiBold';
+  font-size: 18px;
   color: #000;
 }
 
-.p1 {
+/* Section 5 - Profiles */
+#Rebecca, #Eric, #Jermae {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prof-div {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.prof-div-img {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prof-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  width: 70%;
+}
+
+.prof-profilepic {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.prof-cand-name {
+  font-family: 'Cubano';
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+}
+
+.prof-cand-desc {
+  font-family: 'Recoleta SemiBold';
+  font-size: 20px;
+  color: #000;
+}
+
+.prof-div-info {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.prof-div-wrapper {
+  width: 75%;
+  margin-bottom: 40px;
+}
+
+.prof-info-h {
+  font-family: 'Cubano';
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.bio {
+  margin-top: 20px;
+  width: 300px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Recoleta Regular';
+}
+
+.platform-list {
+  font-family: 'Recoleta Regular';
+  font-size: 18px;
+}
+
+.education-main {
+  font-family: 'Recoleta SemiBold';
+  font-size: 18px;
+}
+
+.education-secondary {
+  font-family: 'Recoleta Regular';
+  font-size: 16px;
+}
+
+/* Section 6 - Reminders  */
+#reminder {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rem-div {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.rem-h {
+  font-family: 'Cubano';
+  font-size: 60px;
+  color: #000;
+  text-align: center;
+}
+
+.rem-p {
+  font-family: 'Cubano';
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+}
+
+.rem-f {
+  font-family: 'Recoleta Regular';
+  font-size: 24px;
+  color: #000;
+  text-align: center;
 }
 
 .red {
@@ -188,85 +340,202 @@ body {
   border: 2px solid #000;
 }
 
-.profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+@media screen and (max-width: 800px) {
+  /* Section 2 - CTA */
+  .cta-div, .cand-div {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+
+  .cta-p, .cand-p {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  /* Section 3 - Candidates */
+  .profilepic {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cand-name {
+    font-size: 26px;
+    margin: 10px 0;
+  }
+  
+  .cand-desc {
+    font-size: 18px;
+  }
+
+  /* Section 4 - Platform */
+  .plat-div {
+    width: 80vw;
+  }
+
+  .plat-i {
+    margin: 20px 0;
+  }
 }
 
-.profilepic {
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  margin-bottom: 20px;
-}
+@media screen and (max-width: 500px) {
+  /* Section 1 - HOME */
+  .tagline {
+    font-size: 35px;
+  }
 
-.bio {
-  margin-top: 20px;
-  width: 300px;
-  text-align: center;
-  font-size: 18px;
-  font-family: 'Recoleta Regular';
-}
+  .link-fd {
+    font-size: 16px;
+  }
 
-.div-center-row {
-  width: 90vw;
-  min-width: 90vw;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
+  /* Section 2 - CTA */
+  .cta-div, .cand-div {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+  
+  .cta-p, .cand-p {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
-.div-center2 {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-}
+  /* Section 3 - Candidates */
+  .cand-div-resp {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 0;
+  }
 
-.div-center3 {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-direction: column;
-}
+  .profilepic {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 5px;
+  }
 
-.div-center4 {
-  width: 75%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-bottom: 40px;
-}
+  .profile {
+    margin: 10px 0;
+  }
 
-.div-center-row-center {
-  width: 100vw;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
+  .cand-name {
+    font-size: 18px;
+  }
+  
+  .cand-desc {
+    font-size: 10px;
+  }
 
-.platform-list {
-  font-family: 'Recoleta Regular';
-  font-size: 18px;
-}
+  .link-fd-cand {
+    font-size: 16px;
+    margin-top: 15px;
+  }
 
-.mb-2 {
-  margin-bottom: 20px;
-}
+  /* Section 4 - Platform */
+  .plat-div {
+    width: 90vw;
+  }
 
-.education-main {
-  font-family: 'Recoleta SemiBold';
-  font-size: 18px;
-}
+  .plat-h {
+    font-size: 35px;
+    margin: 20px 0;
+  }
+  
+  .plat-i {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  
+  .plat-p {
+    font-size: 16px;
+  }
 
-.education-secondary {
-  font-family: 'Recoleta Regular';
-  font-size: 16px;
+  /* Section 5 - Profiles */
+  #Rebecca, #Eric, #Jermae {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .prof-div {
+    flex-direction: column;
+  }
+
+  .prof-div-img {
+    width: 90%;
+    margin: 40px 0;
+  }
+  
+  .prof-profilepic {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .prof-cand-name {
+    font-size: 25px;
+  }
+  
+  .prof-cand-desc {
+    font-size: 16px;
+  }
+
+  .bio {
+    width: 100%;
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .prof-div-info {
+    width: 90%;
+  }
+  
+  .prof-div-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .prof-info-h {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .platform-list {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .education-main {
+    font-size: 16px;
+  }
+  
+  .education-secondary {
+    font-size: 14px;
+  }
+
+  .rem-div {
+    width: 80vw;
+  }
+  
+  .rem-h {
+    font-size: 35px;
+  }
+  
+  .rem-p {
+    font-size: 20px;
+  }
+  
+  .rem-f {
+    font-size: 14px;
+  }
 }
